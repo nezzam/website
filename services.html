@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Odoo services by Nezam Systems — customization, implementation, support, migration, integration, and consultancy.">
+  <title data-i18n-title data-i18n-title-en="Services | Nezam Systems" data-i18n-title-ar="خدماتنا | نظام سيستمز">Services | Nezam Systems</title>
+  <link rel="icon" type="image/png" href="assets/logo-icon-transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function(){var t=localStorage.getItem("nezam-theme");if(!t)t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);var l=localStorage.getItem("nezam-lang")||"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();
+  </script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/logo-icon-transparent.png" alt="Nezam Systems">
+        <span data-i18n="nav.brand">Nezam Systems</span>
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="navbar__link" data-i18n="nav.about">About</a>
+        <a href="services.html" class="navbar__link" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" class="navbar__link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="contact.html" class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="navbar__controls">
+        <button class="icon-btn lang-toggle" aria-label="Switch language">عربي</button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle theme"></button>
+        <button class="navbar__toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="mobile-menu__link" data-i18n="nav.about">About</a>
+    <a href="services.html" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="mobile-menu__link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hex-bg"></div>
+    <div class="container page-hero__content">
+      <h1 class="reveal" data-i18n="services.hero.title">Our Services</h1>
+      <p class="reveal reveal-delay-1" data-i18n="services.hero.subtitle">Comprehensive Odoo services designed to take you from planning to production.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div class="card service-card reveal">
+          <div class="service-card__number">01</div>
+          <div class="card__icon">🛠️</div>
+          <h3 data-i18n="service.customization.title">Customization</h3>
+          <p data-i18n="service.customization.full">We extend Odoo's native capabilities to fit your exact business logic.</p>
+          <ul>
+            <li data-i18n="service.customization.f1">Custom module development</li>
+            <li data-i18n="service.customization.f2">Workflow automation & approvals</li>
+            <li data-i18n="service.customization.f3">Advanced reporting & BI dashboards</li>
+            <li data-i18n="service.customization.f4">UI/UX customization</li>
+          </ul>
+        </div>
+        <div class="card service-card reveal reveal-delay-1">
+          <div class="service-card__number">02</div>
+          <div class="card__icon">🚀</div>
+          <h3 data-i18n="service.implementation.title">Implementation</h3>
+          <p data-i18n="service.implementation.full">Our implementation methodology minimizes disruption while maximizing adoption.</p>
+          <ul>
+            <li data-i18n="service.implementation.f1">Requirements gathering & gap analysis</li>
+            <li data-i18n="service.implementation.f2">Phased rollout planning</li>
+            <li data-i18n="service.implementation.f3">Data import & validation</li>
+            <li data-i18n="service.implementation.f4">User training & documentation</li>
+          </ul>
+        </div>
+        <div class="card service-card reveal">
+          <div class="service-card__number">03</div>
+          <div class="card__icon">🛡️</div>
+          <h3 data-i18n="service.support.title">Support</h3>
+          <p data-i18n="service.support.full">Keep your Odoo running at peak performance with our dedicated support packages.</p>
+          <ul>
+            <li data-i18n="service.support.f1">24/7 critical issue response</li>
+            <li data-i18n="service.support.f2">Version upgrades & patching</li>
+            <li data-i18n="service.support.f3">Performance optimization</li>
+            <li data-i18n="service.support.f4">Monthly health reports</li>
+          </ul>
+        </div>
+        <div class="card service-card reveal reveal-delay-1">
+          <div class="service-card__number">04</div>
+          <div class="card__icon card__icon--orange">📦</div>
+          <h3 data-i18n="service.migration.title">Migration</h3>
+          <p data-i18n="service.migration.full">Moving from SAP, Oracle, QuickBooks, or an older Odoo version?</p>
+          <ul>
+            <li data-i18n="service.migration.f1">Legacy system data extraction</li>
+            <li data-i18n="service.migration.f2">Field mapping & transformation</li>
+            <li data-i18n="service.migration.f3">Parallel run & reconciliation</li>
+            <li data-i18n="service.migration.f4">Odoo version upgrades (v14→v17+)</li>
+          </ul>
+        </div>
+        <div class="card service-card reveal">
+          <div class="service-card__number">05</div>
+          <div class="card__icon">🔌</div>
+          <h3 data-i18n="service.integration.title">Integration</h3>
+          <p data-i18n="service.integration.full">Odoo doesn't work in isolation. We connect your ERP with the tools your team already uses.</p>
+          <ul>
+            <li data-i18n="service.integration.f1">E-commerce (Shopify, WooCommerce)</li>
+            <li data-i18n="service.integration.f2">Payment gateways (Stripe, PayPal, local banks)</li>
+            <li data-i18n="service.integration.f3">Shipping & logistics APIs</li>
+            <li data-i18n="service.integration.f4">REST/XML-RPC custom integrations</li>
+          </ul>
+        </div>
+        <div class="card service-card reveal reveal-delay-1">
+          <div class="service-card__number">06</div>
+          <div class="card__icon card__icon--orange">💡</div>
+          <h3 data-i18n="service.consultancy.title">Consultancy</h3>
+          <p data-i18n="service.consultancy.full">Not sure if Odoo is right for you? Our consultants provide independent, vendor-neutral advice.</p>
+          <ul>
+            <li data-i18n="service.consultancy.f1">ERP readiness assessment</li>
+            <li data-i18n="service.consultancy.f2">Business process re-engineering</li>
+            <li data-i18n="service.consultancy.f3">Module selection & licensing guidance</li>
+            <li data-i18n="service.consultancy.f4">ROI analysis & business case development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="services.process.label">Our Process</span>
+        <h2 data-i18n="services.process.title">Structured. Transparent. Proven.</h2>
+        <p data-i18n="services.process.subtitle">Every engagement follows our four-phase delivery framework.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card reveal">
+          <div class="service-card__number">01</div>
+          <h3 data-i18n="about.approach1.title">Discover</h3>
+          <p data-i18n="about.approach1.desc">Deep-dive workshops to map your processes.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <div class="service-card__number">02</div>
+          <h3 data-i18n="about.approach2.title">Design</h3>
+          <p data-i18n="about.approach2.desc">Solution blueprint with module mapping.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="service-card__number">03</div>
+          <h3 data-i18n="about.approach3.title">Deliver</h3>
+          <p data-i18n="about.approach3.desc">Agile sprints with regular demos.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="service-card__number">04</div>
+          <h3 data-i18n="about.approach4.title">Support</h3>
+          <p data-i18n="about.approach4.desc">Post-launch hypercare and improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <h2 data-i18n="home.cta.title">Ready to Modernize Your Operations?</h2>
+        <p data-i18n="home.cta.subtitle">Schedule a free consultation today.</p>
+        <a href="contact.html" class="btn btn--gradient-orange" data-i18n="home.cta.btn1">Book Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-icon-transparent.png" alt="Nezam Systems">
+          <p data-i18n="footer.desc">Nezam Systems — your trusted partner for Odoo ERP solutions.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.quick">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.services">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html" data-i18n="service.customization.title">Customization</a></li>
+            <li><a href="services.html" data-i18n="service.implementation.title">Implementation</a></li>
+            <li><a href="services.html" data-i18n="service.support.title">Support</a></li>
+            <li><a href="services.html" data-i18n="service.integration.title">Integration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.contact">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:info@nezamsystems.com">info@nezamsystems.com</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.rights">© 2024 Nezam Systems. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

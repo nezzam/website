@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Nezam Systems for Odoo ERP consultation, implementation, and support.">
+  <title data-i18n-title data-i18n-title-en="Contact | Nezam Systems" data-i18n-title-ar="تواصل معنا | نظام سيستمز">Contact | Nezam Systems</title>
+  <link rel="icon" type="image/png" href="assets/logo-icon-transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function(){var t=localStorage.getItem("nezam-theme");if(!t)t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);var l=localStorage.getItem("nezam-lang")||"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();
+  </script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/logo-icon-transparent.png" alt="Nezam Systems">
+        <span data-i18n="nav.brand">Nezam Systems</span>
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="navbar__link" data-i18n="nav.about">About</a>
+        <a href="services.html" class="navbar__link" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" class="navbar__link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="contact.html" class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="navbar__controls">
+        <button class="icon-btn lang-toggle" aria-label="Switch language">عربي</button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle theme"></button>
+        <button class="navbar__toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="mobile-menu__link" data-i18n="nav.about">About</a>
+    <a href="services.html" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="mobile-menu__link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hex-bg"></div>
+    <div class="container page-hero__content">
+      <h1 class="reveal" data-i18n="contact.hero.title">Contact Us</h1>
+      <p class="reveal reveal-delay-1" data-i18n="contact.hero.subtitle">Tell us about your project. We'll respond within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 data-i18n="contact.info.title">Get in Touch</h2>
+          <p style="color:var(--text-secondary);margin:16px 0 32px" data-i18n="contact.info.desc">Whether you're starting fresh or upgrading an existing system, our team is ready to help.</p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">✉️</div>
+            <div>
+              <h4 data-i18n="contact.email.label">Email</h4>
+              <a href="mailto:info@nezamsystems.com" data-i18n="contact.email.value">info@nezamsystems.com</a>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📞</div>
+            <div>
+              <h4 data-i18n="contact.phone.label">Phone</h4>
+              <a href="tel:+201000000000" data-i18n="contact.phone.value">+20 100 000 0000</a>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📍</div>
+            <div>
+              <h4 data-i18n="contact.office.label">Head Office</h4>
+              <p data-i18n="contact.office.value">Cairo, Egypt · Dubai, UAE</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">🕐</div>
+            <div>
+              <h4 data-i18n="contact.hours.label">Business Hours</h4>
+              <p data-i18n="contact.hours.value">Sun – Thu, 9:00 AM – 6:00 PM (GMT+2)</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form reveal reveal-delay-2">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.form.name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.form.email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n="contact.form.phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="service" data-i18n="contact.form.service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="" data-i18n="contact.form.service.placeholder">Select a service</option>
+              <option value="customization" data-i18n="service.customization.title">Customization</option>
+              <option value="implementation" data-i18n="service.implementation.title">Implementation</option>
+              <option value="support" data-i18n="service.support.title">Support</option>
+              <option value="migration" data-i18n="service.migration.title">Migration</option>
+              <option value="integration" data-i18n="service.integration.title">Integration</option>
+              <option value="consultancy" data-i18n="service.consultancy.title">Consultancy</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.form.message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gradient" style="width:100%" data-i18n="contact.form.submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-icon-transparent.png" alt="Nezam Systems">
+          <p data-i18n="footer.desc">Nezam Systems — your trusted partner for Odoo ERP solutions.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.quick">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.services">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html" data-i18n="service.customization.title">Customization</a></li>
+            <li><a href="services.html" data-i18n="service.implementation.title">Implementation</a></li>
+            <li><a href="services.html" data-i18n="service.support.title">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.contact">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:info@nezamsystems.com">info@nezamsystems.com</a></li>
+            <li><a href="tel:+201000000000">+20 100 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.rights">© 2024 Nezam Systems. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

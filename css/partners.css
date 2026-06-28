@@ -1,0 +1,37 @@
+.marquee__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.marquee__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(10, 31, 51, 0.15);
+  z-index: 10;
+}
+
+.marquee__item-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(0.9) brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+.marquee__item:hover .marquee__item-logo {
+  filter: none;
+}
+
+.marquee__item-icon {
+  display: none;
+}
