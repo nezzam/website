@@ -5,6 +5,7 @@ const translations = {
     "nav.about": "About",
     "nav.services": "Services",
     "nav.portfolio": "Portfolio",
+    "nav.products": "Products",
     "nav.contact": "Contact",
     "nav.brand": "Nezam Systems",
 
@@ -168,6 +169,17 @@ const translations = {
     "portfolio.filter.food": "Food & Beverage",
     "portfolio.filter.services": "Services",
 
+    // Products
+    "products.hero.title": "Our Products",
+    "products.hero.subtitle": "Official Nezam modules on the Odoo Apps Store — ready to install and extend your Odoo system.",
+    "products.filter.all": "All",
+    "products.filter.free": "Free",
+    "products.filter.paid": "Paid",
+    "products.count": "34 modules available",
+    "products.cta.title": "Need a Custom Module?",
+    "products.cta.subtitle": "We build tailored Odoo extensions for your unique business requirements.",
+    "products.cta.btn": "Contact Us",
+
     "project.1.title": "Al-Majd Manufacturing",
     "project.1.desc": "Full Odoo ERP for a steel fabrication plant — MRP, quality control, and multi-warehouse management.",
     "project.2.title": "Cairo Retail Group",
@@ -218,6 +230,7 @@ const translations = {
     "nav.home": "الرئيسية",
     "nav.about": "من نحن",
     "nav.services": "خدماتنا",
+    "nav.products": "المنتجات",
     "nav.portfolio": "أعمالنا",
     "nav.contact": "تواصل معنا",
     "nav.brand": "نظام سيستمز",
@@ -382,6 +395,17 @@ const translations = {
     "portfolio.filter.food": "الأغذية والمشروبات",
     "portfolio.filter.services": "الخدمات",
 
+    // Products
+    "products.hero.title": "منتجاتنا",
+    "products.hero.subtitle": "وحدات Nezam الرسمية على متجر Odoo Apps — جاهزة للتثبيت وتوسيع نظام Odoo الخاص بك.",
+    "products.filter.all": "الكل",
+    "products.filter.free": "مجاني",
+    "products.filter.paid": "مدفوع",
+    "products.count": "34 وحدة متاحة",
+    "products.cta.title": "تحتاج وحدة مخصصة؟",
+    "products.cta.subtitle": "نبني امتدادات Odoo مخصصة لمتطلبات عملك الفريدة.",
+    "products.cta.btn": "تواصل معنا",
+
     "project.1.title": "مجد للتصنيع",
     "project.1.desc": "Odoo ERP كامل لمصنع تشغيل المعادن — تخطيط الإنتاج ومراقبة الجودة وإدارة مخازن متعددة.",
     "project.2.title": "مجموعة القاهرة للتجزئة",
@@ -438,6 +462,9 @@ function setLang(lang) {
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   applyTranslations(lang);
   updateLangToggle(lang);
+  if (typeof window.renderProducts === "function") {
+    window.renderProducts();
+  }
 }
 
 function applyTranslations(lang) {

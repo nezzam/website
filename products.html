@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nezam Systems portfolio — Odoo ERP projects across manufacturing, retail, F&B, and logistics.">
-  <title data-i18n-title data-i18n-title-en="Portfolio | Nezam Systems" data-i18n-title-ar="أعمالنا | نظام سيستمز">Portfolio | Nezam Systems</title>
+  <meta name="description" content="Nezam Systems Odoo Apps — official modules on the Odoo Apps Store for POS, accounting, productivity, and more.">
+  <title data-i18n-title data-i18n-title-en="Products | Nezam Systems" data-i18n-title-ar="منتجاتنا | نظام سيستمز">Products | Nezam Systems</title>
   <link rel="icon" type="image/png" href="assets/logo-icon-transparent.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,85 +50,32 @@
   <section class="page-hero">
     <div class="hex-bg"></div>
     <div class="container page-hero__content">
-      <h1 class="reveal" data-i18n="portfolio.hero.title">Our Portfolio</h1>
-      <p class="reveal reveal-delay-1" data-i18n="portfolio.hero.subtitle">Selected projects showcasing our expertise across industries and Odoo modules.</p>
+      <h1 class="reveal" data-i18n="products.hero.title">Our Products</h1>
+      <p class="reveal reveal-delay-1" data-i18n="products.hero.subtitle">Official Nezam modules on the Odoo Apps Store — ready to install and extend your Odoo system.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="portfolio-filters reveal">
-        <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">All</button>
-        <button class="filter-btn" data-filter="manufacturing" data-i18n="portfolio.filter.manufacturing">Manufacturing</button>
-        <button class="filter-btn" data-filter="retail" data-i18n="portfolio.filter.retail">Retail</button>
-        <button class="filter-btn" data-filter="food" data-i18n="portfolio.filter.food">Food & Beverage</button>
-        <button class="filter-btn" data-filter="services" data-i18n="portfolio.filter.services">Services</button>
+      <div class="products-toolbar reveal">
+        <div class="product-filters">
+          <button class="product-filter-btn filter-btn active" data-filter="all" data-i18n="products.filter.all">All</button>
+          <button class="product-filter-btn filter-btn" data-filter="free" data-i18n="products.filter.free">Free</button>
+          <button class="product-filter-btn filter-btn" data-filter="paid" data-i18n="products.filter.paid">Paid</button>
+        </div>
+        <p class="products-count" data-i18n="products.count">34 modules available</p>
       </div>
 
-      <div class="grid-3">
-        <article class="portfolio-card reveal visible" data-category="manufacturing">
-          <div class="portfolio-card__visual portfolio-card__visual--teal">🏭</div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__tag" data-i18n="portfolio.filter.manufacturing">Manufacturing</span>
-            <h3 data-i18n="project.1.title">Al-Majd Manufacturing</h3>
-            <p data-i18n="project.1.desc">Full Odoo ERP for a steel fabrication plant — MRP, quality control, and multi-warehouse management.</p>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal visible reveal-delay-1" data-category="retail">
-          <div class="portfolio-card__visual portfolio-card__visual--orange">🛒</div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__tag" data-i18n="portfolio.filter.retail">Retail</span>
-            <h3 data-i18n="project.2.title">Cairo Retail Group</h3>
-            <p data-i18n="project.2.desc">Multi-branch POS integration with centralized inventory across 24 stores.</p>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal visible reveal-delay-2" data-category="food">
-          <div class="portfolio-card__visual portfolio-card__visual--navy">🍽️</div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__tag" data-i18n="portfolio.filter.food">Food & Beverage</span>
-            <h3 data-i18n="project.3.title">Spice Route Restaurants</h3>
-            <p data-i18n="project.3.desc">Odoo for F&B chain — recipe costing, kitchen display, and franchise management.</p>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal visible" data-category="services">
-          <div class="portfolio-card__visual portfolio-card__visual--teal">🚚</div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__tag" data-i18n="portfolio.filter.services">Services</span>
-            <h3 data-i18n="project.4.title">Gulf Logistics Co.</h3>
-            <p data-i18n="project.4.desc">Fleet management, route optimization, and customs documentation integrated with Odoo.</p>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal visible reveal-delay-1" data-category="services">
-          <div class="portfolio-card__visual portfolio-card__visual--orange">💼</div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__tag" data-i18n="portfolio.filter.services">Services</span>
-            <h3 data-i18n="project.5.title">TechServe Solutions</h3>
-            <p data-i18n="project.5.desc">Professional services automation — project tracking, timesheets, and client portal.</p>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal visible reveal-delay-2" data-category="manufacturing">
-          <div class="portfolio-card__visual portfolio-card__visual--navy">💊</div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__tag" data-i18n="portfolio.filter.manufacturing">Manufacturing</span>
-            <h3 data-i18n="project.6.title">Nile Pharma Distribution</h3>
-            <p data-i18n="project.6.desc">Regulated inventory with batch tracking, expiry management, and compliance reporting.</p>
-          </div>
-        </article>
-      </div>
+      <div id="products-grid" class="products-grid"></div>
     </div>
   </section>
 
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner__inner reveal">
-        <h2 data-i18n="home.cta.title">Ready to Modernize Your Operations?</h2>
-        <p data-i18n="home.cta.subtitle">Let's discuss your next project.</p>
-        <a href="contact.html" class="btn btn--gradient-orange" data-i18n="home.cta.btn1">Book Consultation</a>
+        <h2 data-i18n="products.cta.title">Need a Custom Module?</h2>
+        <p data-i18n="products.cta.subtitle">We build tailored Odoo extensions for your unique business requirements.</p>
+        <a href="contact.html" class="btn btn--gradient-orange" data-i18n="products.cta.btn">Contact Us</a>
       </div>
     </div>
   </section>
@@ -146,6 +93,7 @@
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a href="about.html" data-i18n="nav.about">About</a></li>
             <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
             <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
           </ul>
         </div>
@@ -173,5 +121,6 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
 </body>
 </html>
