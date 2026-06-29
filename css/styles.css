@@ -847,16 +847,50 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 .marquee__item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 28px;
+  justify-content: center;
+  padding: 16px 24px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  white-space: nowrap;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
   flex-shrink: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.marquee__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(10, 31, 51, 0.15);
+  z-index: 10;
+}
+
+.marquee__item-logo-wrap {
+  width: 120px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.marquee__item-logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1) contrast(0.9) brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+.marquee__item:hover .marquee__item-logo {
+  filter: none;
+}
+
+.marquee__item-placeholder {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
 }
 
 .marquee__item-icon {
@@ -1068,9 +1102,24 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  padding: 32px;
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-card__logo {
+  width: 295px;
+  height: 201px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.portfolio-card__placeholder {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
 }
 
 .portfolio-card__visual--teal { background: linear-gradient(135deg, rgba(27,153,139,0.2), rgba(10,31,51,0.4)); }
@@ -1102,6 +1151,16 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 .portfolio-card p {
   font-size: 0.9rem;
   color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.portfolio-card__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 /* ============================================

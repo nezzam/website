@@ -89,6 +89,18 @@
     elements.forEach(el => observer.observe(el));
   }
 
+  /* Marquee loop */
+  function initMarquee() {
+    const track = document.querySelector(".marquee__track");
+    if (!track || track.dataset.cloned) return;
+
+    const items = Array.from(track.children);
+    items.forEach(item => {
+      track.appendChild(item.cloneNode(true));
+    });
+    track.dataset.cloned = "true";
+  }
+
   /* Portfolio filter */
   function initPortfolioFilter() {
     const filters = document.querySelectorAll(".filter-btn");
@@ -157,6 +169,7 @@
     initNavbar();
     initMobileMenu();
     initReveal();
+    initMarquee();
     initPortfolioFilter();
     initContactForm();
   });
